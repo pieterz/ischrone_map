@@ -1,0 +1,116 @@
+@import "node_modules/ol/ol.css";
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Mouseposition */
+.mousePosition {
+  position: fixed;
+  top: auto;
+  right: 1vw;
+  bottom: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px solid;
+}
+
+.mousePosition:empty {
+  display: none;
+}
+
+/* scalebar */
+.ol-scale-line {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  background-color: transparent;
+}
+
+.ol-scale-line-inner {
+  color: #000000;
+  border: 2px solid #000000;
+  border-top: none;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scaleline {
+  position: fixed;
+  top: auto;
+  left: 21%;
+  padding-left: 1vw;
+  bottom: 3vw;
+}
+
+/* Isochrone style  */
+.isochroneTool {
+  position: absolute;
+  display: none;
+  top: 10px;
+  left: 0vw;
+  margin: 70px auto auto 45px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  line-height: 1.45;
+  border-radius: 2px;
+  border: 1px solid #d1d1d1;
+  box-shadow: 0px 0px 15px rgba(100, 100, 100, 0.5);
+}
+
+/* Isochrone Tool */
+.isoButtonDiv {
+  position: absolute;
+  top: 5em;
+  left: 0.5rem;
+}
+
+/* Button  */
+.myImg {
+  width: 22px;
+  height: 22px;
+  filter: brightness(0) invert(1);
+}
+
+.homeButtonDiv {
+  position: absolute;
+  top: 7em;
+  left: 0.5rem;
+}
+
+.myButton {
+  background-color: rgba(22, 85, 167, 0.6);
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 2px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding-top: 3px; */
+}
+
+.myButton:hover {
+  background-color: rgb(0, 60, 136, 1);
+}
+
+.myButton.clicked {
+  background-color: rgba(22, 170, 35, 0.8);
+}
+
+.myButton.clicked:hover {
+  background-color: rgba(22, 170, 35, 1);
+}
