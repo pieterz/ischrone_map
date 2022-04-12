@@ -4,7 +4,7 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "npm run build && vite preview"
   },
   "devDependencies": {
     "vite": "^2.6.7"

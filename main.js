@@ -43,7 +43,7 @@ map.addControl(new ScaleLine({
 
 // Isochrone tool
 var isoButton = document.createElement('button');
-isoButton.innerHTML = '<img src="resources/images/duration.png" alt="" class="myImg"></img>';
+isoButton.innerHTML = '<img src="./assets/duration.svg" alt="" class="myImg"></img>';
 isoButton.className = 'myButton';
 isoButton.id = 'isoButton';
 isoButton.title = 'Isochrone tool';
